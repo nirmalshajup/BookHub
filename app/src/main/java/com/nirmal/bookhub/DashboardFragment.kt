@@ -18,7 +18,7 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view =inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val view =inflater.inflate(R.layout.fragment_dashboard, container, false) //here no return value
         recyclerDashboard = view.findViewById(R.id.recyclerDashboard)
         layoutManager = LinearLayoutManager(activity)
         return view
