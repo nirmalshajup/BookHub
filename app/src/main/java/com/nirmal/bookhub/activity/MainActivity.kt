@@ -1,16 +1,20 @@
-package com.nirmal.bookhub
+package com.nirmal.bookhub.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar //Error of Toolbar
 import androidx.core.view.GravityCompat
+import com.nirmal.bookhub.*
+import com.nirmal.bookhub.fragment.AboutAppFragment
+import com.nirmal.bookhub.fragment.DashboardFragment
+import com.nirmal.bookhub.fragment.FavouritesFragment
+import com.nirmal.bookhub.fragment.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,7 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         openDashboard()
 
-        val actionBarDrawerToggle = ActionBarDrawerToggle(this@MainActivity,drawerLayout, R.string.open_drawer, R.string.close_drawer)
+        val actionBarDrawerToggle = ActionBarDrawerToggle(this@MainActivity,drawerLayout,
+            R.string.open_drawer,
+            R.string.close_drawer
+        )
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
