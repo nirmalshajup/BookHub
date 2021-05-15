@@ -17,15 +17,15 @@ class DashboardFragment : Fragment() {
 
     val booklist = arrayListOf(
         "P.S I love you",
-        "The Great Gateby",
+        "The Great Gatsby",
         "Anna Karenina",
-        "The Kite Runner by Khaled Hosseini",
-        "Harry Potter and the Philosopher’s Stone",
-        "Slaughterhouse-Five",
-        "To Kill a Mockingbird",
-        "The Book Thief",
-        "Wuthering Heights",
-        "The Catcher in the Rye"
+        "Madame Bovary",
+        "War and Peace",
+        "Lolita",
+        "Middlemarch",
+        "The Adventure of HuckleberryFinn",
+        "Moby-Dick",
+        "The Lord of thr Rings"
     )
     lateinit var recyclerAdapter: DashboardRecyclerAdapter
 
